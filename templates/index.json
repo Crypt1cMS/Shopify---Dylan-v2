@@ -99,12 +99,20 @@
             "question": "Learning?",
             "answer": "Shopify"
           }
+        },
+        "question_EbmLfY": {
+          "type": "question",
+          "settings": {
+            "question": "Are you nice?",
+            "answer": "No"
+          }
         }
       },
       "block_order": [
         "question_kzxgYJ",
         "question_9LHGm7",
-        "question_hGxLHH"
+        "question_hGxLHH",
+        "question_EbmLfY"
       ],
       "settings": {
         "headline": "FAQ"
