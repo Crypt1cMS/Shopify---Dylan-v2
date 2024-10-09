@@ -2,7 +2,7 @@
 
 <div className="product-description-content">
 
-    <h1>{{ section.settings.headline }}</h1>
+    <h1>{{ section.settings.headline | default: "Product Description" }}</h1>
 
     <div className="flex-wrapper">
 
