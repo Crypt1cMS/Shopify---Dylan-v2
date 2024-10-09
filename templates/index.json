@@ -117,11 +117,19 @@
       "settings": {
         "headline": "FAQ"
       }
+    },
+    "product_description_rtYrLR": {
+      "type": "product-description",
+      "settings": {
+        "headline": "",
+        "text-details": "Please enter the description of your product"
+      }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
+    "product_description_rtYrLR",
     "faq_cgqG7f"
   ]
 }
