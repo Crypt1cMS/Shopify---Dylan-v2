@@ -1,0 +1,41 @@
+{{ 'section-product-description.css' | asset_url | stylesheet_tag }}
+
+<div className="product-description-content">
+
+    <h1>{{ section.settings.headline }}</h1>
+
+    <div className="flex-wrapper">
+
+        <div className="product-description-left-content">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto distinctio, neque iure iusto fugiat reiciendis illo facilis a in obcaecati tenetur accusantium optio. Molestias provident voluptatum quidem explicabo esse reiciendis!</p>
+        </div>
+
+        <div className="product-description-right-content">
+            <img src="https://imgs.search.brave.com/vVNYuWjiBnNgFO5kXjeK9k-7i-da6iMJjxXOeNW1frs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NzEwVllNUlRrMUwu/anBn" alt="Cat shirt" height="300px" width="300px"/>
+        </div>
+
+    </div>
+
+    <button type='submit' id='btn-product-description'>Shop</button>
+
+</div>
+
+
+
+{% schema %} 
+    {
+        "name": "Product Description",
+        "settings": [
+            {
+                "type": "text",
+                "label": "Product Description Header",
+                "id": "headline",
+            }
+        ],
+        "presets": [
+            {
+                "name": "Product Description",
+            }
+        ]
+    }
+{% endschema %}
