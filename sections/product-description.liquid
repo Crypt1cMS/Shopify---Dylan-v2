@@ -7,7 +7,7 @@
     <div className="flex-wrapper">
 
         <div className="product-description-left-content">
-            <p>{{ section.settings.text-details }}</p>
+            <p>{{ section.settings.text-details | default: "Please enter the details!" }}</p>
         </div>
 
         <div className="product-description-right-content">
@@ -35,8 +35,7 @@
                 "type": "textarea",
                 "id": "text-details",
                 "label": "Product Details",
-                "default": "Please enter the description of your product"
-                
+                "default": "Please enter the description of your product!",
             }
         ],
         "presets": [
