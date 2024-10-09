@@ -7,7 +7,7 @@
     <div className="flex-wrapper">
 
         <div className="product-description-left-content">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto distinctio, neque iure iusto fugiat reiciendis illo facilis a in obcaecati tenetur accusantium optio. Molestias provident voluptatum quidem explicabo esse reiciendis!</p>
+            <p>{{ section.settings.text-details }}</p>
         </div>
 
         <div className="product-description-right-content">
@@ -30,6 +30,13 @@
                 "type": "text",
                 "label": "Product Description Header",
                 "id": "headline",
+            },
+            {
+                "type": "textarea",
+                "id": "text-details",
+                "label": "Product Details",
+                "default": "Please enter the description of your product"
+                
             }
         ],
         "presets": [
