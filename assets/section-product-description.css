@@ -42,9 +42,7 @@
 }
 
 .product-description-right-content img {
-    max-width: 300px;
-    max-height: 300px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .btn-product-description {
