@@ -35,7 +35,7 @@
     </h1>
 
     <div class="flex-wrapper 
-        {% if section.settings.content_reverse == 'true'%} col-reverse
+        {% if section.settings.content_reverse %} col-reverse
         {% endif %}
     ">
         <div class="product-description-left-content">
@@ -82,19 +82,19 @@
                 }
             ],
             "default": "center",
-            "label": "Header Alignment",
+            "label": "Header Alignment"
         },
         {
             "type": "textarea",
             "id": "text-details",
             "label": "Product Details",
-            "default": "Please enter the description of your product!",
+            "default": "Please enter the description of your product!"
         },
         {
             "type": "checkbox",
             "label": "Reverse content position with text",
             "id": "content_reverse",
-            "default": false,
+            "default": false
         },
         {
             "type": "text",
@@ -104,7 +104,7 @@
     ],
     "presets": [
         {
-            "name": "Product Description",
+            "name": "Product Description"
         }
     ]
 }
