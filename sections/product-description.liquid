@@ -55,7 +55,7 @@
 
         </div>
 
-        {%- if section.settings.button_detail != "" -%}
+        {%- if section.settings.button_detail != blank -%}
             <div class="btn-product-description">
                 <a href="{{ section.settings.button_link }}">
                     <button type='submit'>
