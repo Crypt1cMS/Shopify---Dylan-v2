@@ -27,13 +27,13 @@
 <div class="main-product-container">
     <div class="product-description-content">
 
-            <h1 class="heading 
-                {% if section.settings.header_alignment == 'left' %} align-left 
-                {% elsif section.settings.header_alignment == 'right' %} align-right 
-                {% endif %}
-            ">
-                {{ section.settings.headline | default: "Product Description" }}
-            </h1>
+        <h1 class="heading 
+            {% if section.settings.header_alignment == 'left' %} align-left 
+            {% elsif section.settings.header_alignment == 'right' %} align-right 
+            {% endif %}
+        ">
+            {{ section.settings.headline | default: "Product Description" }}
+        </h1>
        
 
         <div class="flex-wrapper 
