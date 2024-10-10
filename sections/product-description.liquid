@@ -1,45 +1,35 @@
 {{ 'section-product-description.css' | asset_url | stylesheet_tag }}
 
 <style>
+    .heading {
+        display: flex;
+        justify-content: center;
+    }
 
-.heading-left {
-    display: flex;
-    justify-content: flex-start;
-}
+    .align-left {
+        justify-content: flex-start; 
+    }
 
-.heading-center {
-    display: flex;
-    justify-content: center;
-}
+    .align-center {
+        justify-content: center; 
+    }
 
-.heading-right {
-    display: flex;
-    justify-content: flex-end;
-}
+    .align-right {
+        justify-content: flex-end; 
+    }
 </style>
 
 <div className="product-description-content">
 
-    {%- if section.settings.header_alignment == 'left' -%}
-
-        <h1 class="heading-left">{{ section.settings.headline | default: "Product Description" }}</h1>
-
-    {%- endif -%}
-
-    {%- if section.settings.header_alignment == 'center' -%}
-
-        <h1 class="heading-center">{{ section.settings.headline | default: "Product Description" }}</h1>
-
-    {%- endif -%}
-
-    {%- if section.settings.header_alignment == 'right' -%}
-
-        <h1 class="heading-right">{{ section.settings.headline | default: "Product Description" }}</h1>
-
-    {%- endif -%}
+    <h1 class="heading 
+        {%- if section.settings.header_alignment == 'left' -%} align-left 
+        {%- elsif section.settings.header_alignment == 'right' -%} align-right 
+        {%- endif -%}
+    ">
+        {{ section.settings.headline | default: "Product Description" }}
+    </h1>
 
     <div className="flex-wrapper">
-
         <div className="product-description-left-content">
             <p>{{ section.settings.text-details | default: "Please enter the details!" }}</p>
         </div>
@@ -47,56 +37,53 @@
         <div className="product-description-right-content">
             <img src="https://imgs.search.brave.com/vVNYuWjiBnNgFO5kXjeK9k-7i-da6iMJjxXOeNW1frs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NzEwVllNUlRrMUwu/anBn" alt="Cat shirt" height="300px" width="300px"/>
         </div>
-
     </div>
 
     <button type='submit' id='btn-product-description'>Shop</button>
 
 </div>
 
-
-
 {% schema %} 
-    {
-        "name": "Product Description",
-        "settings": [
-            {
-                "type": "text",
-                "label": "Product Description Header",
-                "id": "headline",
-            },
-            {
-                "type": "select",
-                "id": "header_alignment",
-                "options": [
-                  {
+{
+    "name": "Product Description",
+    "settings": [
+        {
+            "type": "text",
+            "label": "Product Description Header",
+            "id": "headline",
+        },
+        {
+            "type": "select",
+            "id": "header_alignment",
+            "options": [
+                {
                     "value": "left",
                     "label": "Left"
-                  },
-                  {
+                },
+                {
                     "value": "center",
                     "label": "Center"
-                  },
-                  {
+                },
+                {
                     "value": "right",
                     "label": "Right"
-                  }
-                ],
-                "default": "center",
-                "label": "Header Alignment",
-                "info": "Manases es pajaro"
-              },
-              {
-                "type": "textarea",
-                "id": "text-details",
-                "label": "Product Details",
-                "default": "Please enter the description of your product!",
-            },
-        ],
-        "presets": [
-            {
-                "name": "Product Description",
-            }
-        ]
-    }
+                }
+            ],
+            "default": "center",
+            "label": "Header Alignment",
+            "info": "Manases es pajaro"
+        },
+        {
+            "type": "textarea",
+            "id": "text-details",
+            "label": "Product Details",
+            "default": "Please enter the description of your product!",
+        },
+    ],
+    "presets": [
+        {
+            "name": "Product Description",
+        }
+    ]
+}
 {% endschema %}
