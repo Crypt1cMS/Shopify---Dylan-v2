@@ -40,7 +40,7 @@
     </div>
 
     <div class="btn-product-description">
-        <button type='submit'>Shop</button>
+        <button type='submit'>{{  section.settings.button_detail }}</button>
     </div>
 
 </div>
@@ -79,6 +79,11 @@
             "id": "text-details",
             "label": "Product Details",
             "default": "Please enter the description of your product!",
+        },
+        {
+            "type": "text",
+            "label": "Button content",
+            "id": "button_detail"
         },
     ],
     "presets": [
