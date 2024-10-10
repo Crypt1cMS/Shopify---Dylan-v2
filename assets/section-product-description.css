@@ -2,14 +2,14 @@
     display: flex;
     flex-direction: column;
     padding: 2.5rem 5rem;
+    max-width: 1400px;
 }
 
-.flex-wrapper {
+.content-flex-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 1400px;
 }
 
 .product-description-left-content {
