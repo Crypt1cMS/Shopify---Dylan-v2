@@ -1,8 +1,42 @@
 {{ 'section-product-description.css' | asset_url | stylesheet_tag }}
 
+<style>
+
+.heading-left {
+    display: flex;
+    text-align: start;
+}
+
+.heading-center {
+    display: flex;
+    text-align: center;
+}
+
+.heading-right {
+    display: flex;
+    text-align: end;
+}
+</style>
+
 <div className="product-description-content">
 
-    <h1>{{ section.settings.headline | default: "Product Description" }}</h1>
+    {%- if section.settings.header_alignment == 'left' -%}
+
+        <h1 class="heading-left">{{ section.settings.headline | default: "Product Description" }}</h1>
+
+    {%- endif -%}
+
+    {%- if section.settings.header_alignment == 'center' -%}
+
+        <h1 class="heading-center">{{ section.settings.headline | default: "Product Description" }}</h1>
+
+    {%- endif -%}
+
+    {%- if section.settings.header_alignment == 'right' -%}
+
+        <h1 class="heading-right">{{ section.settings.headline | default: "Product Description" }}</h1>
+
+    {%- endif -%}
 
     <div className="flex-wrapper">
 
