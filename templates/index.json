@@ -76,6 +76,13 @@
         "padding_bottom": 36
       }
     },
+    "product_description_rtYrLR": {
+      "type": "product-description",
+      "settings": {
+        "headline": "ijsdifjsdfjhsd0fhs9dfh",
+        "text-details": "asdunasdbuas8ibdyu"
+      }
+    },
     "faq_cgqG7f": {
       "type": "faq",
       "blocks": {
@@ -116,13 +123,6 @@
       ],
       "settings": {
         "headline": "FAQ"
-      }
-    },
-    "product_description_rtYrLR": {
-      "type": "product-description",
-      "settings": {
-        "headline": "",
-        "text-details": "Please enter the description of your product"
       }
     }
   },
