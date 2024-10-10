@@ -39,9 +39,11 @@
         </div>
     </div>
 
-    <div class="btn-product-description">
-        <button type='submit'>{{  section.settings.button_detail | default: "Shop" }}</button>
-    </div>
+    {%- if section.settings.button_detail != "" -%}
+        <div class="btn-product-description">
+            <button type='submit'>{{  section.settings.button_detail  }}</button>
+        </div>
+    {%- endif -%}
 
 </div>
 
@@ -82,7 +84,7 @@
         },
         {
             "type": "text",
-            "label": "Button content",
+            "label": "Button text",
             "id": "button_detail"
         },
     ],
