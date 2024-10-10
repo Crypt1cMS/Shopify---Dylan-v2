@@ -49,14 +49,7 @@
 
             <div class="product-description-right-content">
                 {% if section.settings.product != blank %}
-                    
-                    {% assign product = all_products[section.settings.product] %}
-
-                    {% if product.featured_image %}
-                      <img src="{{ product.featured_image.src | image_url: 'large' }}" alt="{{ product.title }}" height="300px" width="200px">
-                    {% else %}
-                      <p>No featured image available</p>
-                    {% endif %}
+                    <img src="{{ product.featured_image.src | image_url: 'large' }}" alt="{{ product.title }}" height="300px" width="200px">
                 {% endif %}
             </div>
 
