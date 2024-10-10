@@ -27,12 +27,12 @@
 <div class="main-product-container">
     <div class="product-description-content">
 
-        <div class="header-content">
-            <h1 class="heading 
+        <div class="header-content 
                 {% if section.settings.header_alignment == 'left' %} align-left 
                 {% elsif section.settings.header_alignment == 'right' %} align-right 
                 {% endif %}
             ">
+            <h1 class="heading">
                 {{ section.settings.headline | default: "Product Description" }}
             </h1>
         </div>
