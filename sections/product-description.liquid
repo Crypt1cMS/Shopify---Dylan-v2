@@ -35,7 +35,7 @@
     </h1>
 
     <div class="flex-wrapper 
-        {% if section.settings.content_reverse == 'True'%} col-reverse
+        {% if section.settings.content_reverse == 'true'%} col-reverse
         {% endif %}
     ">
         <div class="product-description-left-content">
@@ -92,8 +92,9 @@
         },
         {
             "type": "checkbox",
-            "label": "Reverse position with text",
-            "id": "content_reverse"
+            "label": "Reverse content position with text",
+            "id": "content_reverse",
+            "default": false,
         },
         {
             "type": "text",
