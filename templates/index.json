@@ -80,8 +80,9 @@
       "type": "product-description",
       "settings": {
         "headline": "asdasudyasvdyuasvbdyu",
-        "header_alignment": "right",
-        "text-details": "I am selling this t-shirt!"
+        "header_alignment": "center",
+        "text-details": "I am selling this t-shirt!",
+        "button_detail": "Shop"
       }
     },
     "faq_cgqG7f": {
