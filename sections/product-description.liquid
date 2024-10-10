@@ -51,7 +51,11 @@
 
     {%- if section.settings.button_detail != "" -%}
         <div class="btn-product-description">
-            <button type='submit'>{{  section.settings.button_detail  }}</button>
+            <button type='submit'>
+                <a href="{{ section.settings.button_link }}">
+                    {{  section.settings.button_detail  }}
+                </a>
+            </button>
         </div>
     {%- endif -%}
 
@@ -102,6 +106,11 @@
             "type": "text",
             "label": "Button text",
             "id": "button_detail"
+        },
+        {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button link"   
         },
     ],
     "presets": [
