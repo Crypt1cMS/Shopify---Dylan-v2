@@ -84,7 +84,7 @@
         "text-details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "content_reverse": false,
         "button_detail": "Go to our shop!",
-        "button_link": ""
+        "button_link": "shopify://collections/all"
       }
     },
     "faq_cgqG7f": {
