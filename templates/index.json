@@ -81,9 +81,10 @@
       "settings": {
         "headline": "asdasudyasvdyuasvbdyu",
         "header_alignment": "center",
-        "text-details": "I am selling this t-shirt!",
+        "text-details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "content_reverse": false,
-        "button_detail": "Go to our shop!"
+        "button_detail": "Go to our shop!",
+        "button_link": ""
       }
     },
     "faq_cgqG7f": {
