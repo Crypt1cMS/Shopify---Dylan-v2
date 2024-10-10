@@ -24,41 +24,43 @@
 
 </style>
 
-<div class="product-description-content">
+<div class="main-product-container">
+    <div class="product-description-content">
 
-    <h1 class="heading 
-        {% if section.settings.header_alignment == 'left' %} align-left 
-        {% elsif section.settings.header_alignment == 'right' %} align-right 
-        {% endif %}
-    ">
-        {{ section.settings.headline | default: "Product Description" }}
-    </h1>
+        <h1 class="heading 
+            {% if section.settings.header_alignment == 'left' %} align-left 
+            {% elsif section.settings.header_alignment == 'right' %} align-right 
+            {% endif %}
+        ">
+            {{ section.settings.headline | default: "Product Description" }}
+        </h1>
 
-    <div class="flex-wrapper 
-        {% if section.settings.content_reverse %} row-reverse
-        {% endif %}
-    ">
+        <div class="flex-wrapper 
+            {% if section.settings.content_reverse %} row-reverse
+            {% endif %}
+        ">
 
-        <div class="product-description-left-content">
-            <p>{{ section.settings.text-details | default: "Please enter the details!" }}</p>
+            <div class="product-description-left-content">
+                <p>{{ section.settings.text-details | default: "Please enter the details!" }}</p>
+            </div>
+
+            <div class="product-description-right-content">
+                <img src="https://imgs.search.brave.com/vVNYuWjiBnNgFO5kXjeK9k-7i-da6iMJjxXOeNW1frs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NzEwVllNUlRrMUwu/anBn" alt="Cat shirt" height="300px" width="300px"/>
+            </div>
+
         </div>
 
-        <div class="product-description-right-content">
-            <img src="https://imgs.search.brave.com/vVNYuWjiBnNgFO5kXjeK9k-7i-da6iMJjxXOeNW1frs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NzEwVllNUlRrMUwu/anBn" alt="Cat shirt" height="300px" width="300px"/>
-        </div>
+        {%- if section.settings.button_detail != "" -%}
+            <div class="btn-product-description">
+                <a href="{{ section.settings.button_link }}">
+                    <button type='submit'>
+                        {{  section.settings.button_detail  }}
+                    </button>
+                </a>
+            </div>
+        {%- endif -%}
 
     </div>
-
-    {%- if section.settings.button_detail != "" -%}
-        <div class="btn-product-description">
-            <a href="{{ section.settings.button_link }}">
-                <button type='submit'>
-                    {{  section.settings.button_detail  }}
-                </button>
-            </a>
-        </div>
-    {%- endif -%}
-
 </div>
 
 {% schema %} 
