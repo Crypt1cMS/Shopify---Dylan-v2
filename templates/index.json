@@ -80,7 +80,8 @@
       "type": "product-description",
       "settings": {
         "headline": "ijsdifjsdfjhsd0fhs9dfh",
-        "text-details": "asdunasdbuas8ibdyu"
+        "text-details": "asdunasdbuas8ibdyu",
+        "header_alignment": "left"
       }
     },
     "faq_cgqG7f": {
