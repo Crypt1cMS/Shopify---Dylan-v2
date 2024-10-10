@@ -79,9 +79,9 @@
     "product_description_rtYrLR": {
       "type": "product-description",
       "settings": {
-        "headline": "ijsdifjsdfjhsd0fhs9dfh",
-        "text-details": "asdunasdbuas8ibdyu",
-        "header_alignment": "left"
+        "headline": "Product Description",
+        "header_alignment": "center",
+        "text-details": "I am selling this t-shirt!"
       }
     },
     "faq_cgqG7f": {
