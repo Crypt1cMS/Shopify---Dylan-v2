@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1rem 1.5rem;
+    padding: 2.5rem 5rem;
 }
 
 .flex-wrapper {
@@ -29,9 +29,15 @@
     max-height: 300px;
 }
 
-#btn-product-description {
-    width: 10rem;
-    height: 2rem;
+.btn-product-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.btn-product-description button {
+    padding: 0.6rem 5rem;
     background-color: transparent;
     border-radius: 15px;
     font-weight: 500;
@@ -40,7 +46,7 @@
     border: 2px solid black;
 }
 
-#btn-product-description:hover {
+.btn-product-description button:hover {
     background-color: black;
     color: white;
 }
