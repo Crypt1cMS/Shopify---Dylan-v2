@@ -82,7 +82,7 @@
         "headline": "asdasudyasvdyuasvbdyu",
         "header_alignment": "center",
         "text-details": "I am selling this t-shirt!",
-        "content_reverse": true,
+        "content_reverse": false,
         "button_detail": "Go to our shop!"
       }
     },
